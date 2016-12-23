@@ -1,0 +1,12 @@
+{{one-way-input
+  value
+  update=(action (mut value))
+  keyEvents=(hash
+    13=(action 'onEnter')
+  )
+}}
+<ul>
+  {{#each tasks as |task|}}
+    <li>{{task.name}} <button {{action removeTask task }}>Remove</button></li>
+  {{/each}}
+</ul>
