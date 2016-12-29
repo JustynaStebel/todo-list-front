@@ -5,13 +5,12 @@ export default Ember.Route.extend({
     return this.store.findAll('task');
   },
   actions: {
-    addTask() {
-      let name = this.get('newName');
-      let newTask = this.store.createRecord('task', { name: name });
-      newTask.save();
+    addTask(task) {
+      const newTask = this.store.createRecord('task', task);
+      return newTask.save();
     },
-    removeTask(task) {
-      let todo = this.get('model');
+    removeTask() {
+      const todo = this.get('model');
       todo.deleteRecord();
       todo.save();
       // this.store.destroyRecord(task);
