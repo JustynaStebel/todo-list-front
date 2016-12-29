@@ -1,0 +1,102 @@
+body {
+  font-family: Courier, monospace;
+  font-size: 1.2em;
+  margin-left: 2em;
+}
+
+#title {
+  color: #084887;
+  font-family: Times;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul div {
+  display: inline-block;
+  vertical-align: top;
+  height: 150px;
+  width: 200px;
+  text-align: center;
+  padding: 0 1em 3em;
+}
+
+ul li {
+  padding: 1em;
+  color: #F7F5FB;
+  background: #F58A07;
+  height: 50%;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.task {
+  text-decoration: underline;
+  color: #111;
+}
+
+.modal {
+  width: 20em;
+  height: 15em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -7.5em;
+  margin-left: -10em;
+  padding: 1em;
+  background-color: white;
+  border: 5px solid #F58A07;
+  color: #F9AB55;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 11; /* 1px higher than the overlay layer */
+  opacity: 1 !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.28);
+  box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.28);
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+}
+.task-done {
+  color: #F7F5FB;
+  background-color: #F9AB55;
+  border: none;
+}
+.close-task {
+  color: #F7F5FB;
+  background-color: #909CC2;
+  border: none;
+}
+.remove-task {
+  color: #F7F5FB;
+  background-color: #EC4E20;
+  border: none;
+}
+.add-task-form {
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.add-task-title {
+  color: #084887;
+}
+input.ember-view {
+  width: 400px;
+  height: 20px;
+  font-size: 20px;
+  font-family: inherit;
+  border-color: #F58A07;
+  border-style: solid;
+}

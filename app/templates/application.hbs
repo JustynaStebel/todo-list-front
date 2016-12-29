@@ -1,4 +1,8 @@
-<h1>Tasks to do</h1>
-
-<!-- {{todo-list tasks=model addTask=(route-action "addTask") removeTask=(route-action "removeTask")}} -->
+<h2 id="title">
+  {{link-to "MY OWN TODO LIST" 'tasks'}}
+</h2>
+<div class="add-task-form">
+  <span class="add-task-title">Add new task:</span>
+  {{todo-list tasks=model addTask=(route-action "addTask")}}
+</div>
 {{outlet}}
