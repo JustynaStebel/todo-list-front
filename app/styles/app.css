@@ -100,3 +100,7 @@ input.ember-view {
   border-color: #F58A07;
   border-style: solid;
 }
+.footer {
+  color: #084887;
+  text-align: center;
+}
