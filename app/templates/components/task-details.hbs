@@ -1,9 +1,8 @@
-
 <li {{action "open"}}>{{task.name}}</li>
-<p>
+<!-- <p>
   <button class="task-done" {{action "close"}}>Mark as done</button>
-  <button class="remove-task">Remove</button>
-</p>
+  <<button class="remove-task" {{action "removeTask" task}}>Remove</button> >
+</p> -->
 {{#if isShowingModal}}
   {{#modal-dialog close="close" clickOutsideToClose=true}}
 
@@ -12,8 +11,8 @@
       <strong>{{task.name}}</strong>
 
       <p>
-        <button class="task-done" {{action "close"}}>Mark as done</button>
-        <button class="remove-task">Remove</button>
+        <!-- <button class="task-done" {{action "close"}}>Mark as done</button>
+        <button class="remove-task" {{action "removeTask" task}}>Remove</button> -->
         <button class="close-task" {{action "close"}}>Close</button>
       </p>
     </div>

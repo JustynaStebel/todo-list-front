@@ -9,11 +9,10 @@ export default Ember.Route.extend({
       const newTask = this.store.createRecord('task', task);
       return newTask.save();
     },
-    removeTask() {
-      const todo = this.get('model');
-      todo.deleteRecord();
-      todo.save();
-      // this.store.destroyRecord(task);
-    }
+    // removeTask(task) {
+    //   this.store.findRecord('task', task).then(function(task) {
+    //     task.destroyRecord();
+    //   });
+    // }
   }
 });
